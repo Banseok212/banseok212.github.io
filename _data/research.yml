@@ -15,8 +15,8 @@
   methods: ["16S rRNA amplicon", "Random Forest / XGBoost", "MaAsLin2 · LEfSe", "Diversity analysis", "External validation"]
   topic: "Microbiome"
   projects:
-    - { title: "Gut microbiome age prediction & longevity-associated markers", period: "2025 – 2026", partner: "Accugene (internal)", note: "First author · n = 3,659 · macro-AUC 0.863" }
-    - { title: "Oral microbiome classifier for periodontitis severity", period: "2024.07 – 2025.05", partner: "Seoul National University Bundang Hospital", note: "AUC 0.98 · 15 biomarker genera" }
+    - { title: "Gut microbiome age prediction & longevity-associated markers", period: "2025 – 2026", partner: "Accugene (internal)", note: "First author · n = 3,659" }
+    - { title: "Oral microbiome classifier for periodontitis severity", period: "2024.07 – 2025.05", partner: "Seoul National University Bundang Hospital", note: "15 biomarker genera" }
     - { title: "Gut microbiome & blood markers after red ginseng intake in obesity", period: "2023.11 – 2025.05", partner: "Korea Ginseng Corp. R&D", note: "" }
     - { title: "Gut microbiome changes under Korean-medicine treatment for atopic dermatitis", period: "2021.02 – 2022.01", partner: "Korea Institute of Oriental Medicine", note: "" }
 
@@ -68,6 +68,6 @@
   methods: ["CLIA validation", "RNA-seq · DESeq2", "WES variant calling", "Metagenomics", "Pan-genome"]
   topic: "Clinical NGS"
   projects:
-    - { title: "NGS pipeline validation in a CLIA lab environment", period: "2023.07 – 2023.12", partner: "Accugene (internal)", note: "Sensitivity 100% · concordance 98–99%" }
+    - { title: "NGS pipeline validation in a CLIA lab environment", period: "2023.07 – 2023.12", partner: "Accugene (internal)", note: "" }
     - { title: "Transcriptomic changes in kidney cells under a diabetic-complication regulator (KLF9)", period: "2025.10 – 2025.12", partner: "KDCA National Institute of Health", note: "" }
     - { title: "Academic & DTC microbiome analysis service pipelines", period: "2023.05 – 2026.04", partner: "Accugene (internal)", note: "" }
