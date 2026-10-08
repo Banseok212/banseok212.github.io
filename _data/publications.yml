@@ -45,14 +45,14 @@
   topics: ["Microbiome"]
   note: "App. No. 10-2024-0083694 · Pub. No. 10-2026-0000857"
 
-- title: "*Massilia litorea* sp. nov., *Marinobacter salinisoli* sp. nov., and *Rhodobacter xanthinilyticus*"
+- title: "*Massilia litorea* sp. nov., *Marinobacter salinisoli* sp. nov. and *Rhodobacter xanthinilyticus* sp. nov., isolated from coastal environments"
   authors: "Banseok Lee, Donghoon Shin, Juseong Kim, Su-Kyoung Shin, Hana Yi, Min-gyung Bae"
   venue: "International Journal of Systematic and Evolutionary Microbiology"
   year: 2024
   type: "Journal"
   topics: ["Microbial taxonomy"]
   url: "https://doi.org/10.1099/ijsem.0.006255"
-  note: "First author"
+  note: "First author · published 30 Jan 2024"
   selected: true
 
 - title: "Universal primers for *Rift Valley fever virus* whole-genome sequencing"
