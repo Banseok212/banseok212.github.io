@@ -5,11 +5,11 @@
 # selected: true 면 Home의 Selected Publications에 나와요.
 - title: "Gut microbiome-based age prediction and longevity-associated taxonomic markers in a large-scale Korean cohort"
   authors: "Ban Seok Lee, Jae-Won Jo, In Kyoung Cho, Hyeri Kim, Sun Jae Kwon"
-  venue: "Frontiers in Aging (Healthy Longevity)"
+  venue: "Manuscript under review"
   year: 2026
-  type: "In review"
+  type: "Under review"
   topics: ["Microbiome"]
-  note: "First author · submitted Jul 2026"
+  note: "First author"
   selected: true
 
 - title: "Machine learning reveals microbiome differences by periodontitis severity"
