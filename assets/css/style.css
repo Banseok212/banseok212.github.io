@@ -307,7 +307,7 @@ img { max-width: 100%; display: block; }
 .pubs-section { padding-top: 40px; }
 .year-block { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 32px; margin-bottom: 56px; }
 .year-block[hidden] { display: none; }
-.year { font-size: clamp(40px, 5vw, 60px); font-weight: 700; letter-spacing: -0.02em; line-height: 1; margin: 12px 0 8px; color: transparent; -webkit-text-stroke: 1.5px var(--ink-muted); }
+.year { font-size: clamp(40px, 5vw, 60px); font-weight: 700; letter-spacing: -0.02em; line-height: 1; margin: 12px 0 8px; color: var(--ink); }
 .year-side { position: sticky; top: calc(var(--header-h) + 80px); align-self: start; }
 
 /* ── Research page ── */
