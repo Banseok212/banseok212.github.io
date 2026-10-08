@@ -154,7 +154,8 @@ document.querySelector('.theme-toggle')?.addEventListener('click', () => {
   fetch(`${api}/users/${grid.dataset.user}/repos?per_page=100&sort=pushed`)
     .then(res => { if (!res.ok) throw res; return res.json(); })
     .then(repos => {
-      const list = repos.filter(r => !r.fork && !r.archived && !skip.has(r.full_name.toLowerCase()));
+      const site = `${grid.dataset.user}.github.io`.toLowerCase();
+      const list = repos.filter(r => !r.fork && !r.archived && r.name.toLowerCase() !== site && !skip.has(r.full_name.toLowerCase()));
       if (!list.length) { grid.innerHTML = '<p class="muted">No other public repositories yet.</p>'; return; }
       grid.innerHTML = list.map(r => `
         <a class="repo" href="${esc(r.html_url)}">
