@@ -1,0 +1,16 @@
+# 첫 화면(Home) 문구
+hero_lines:          # 큰 제목 — 줄마다 한 줄씩. *단어* 는 빨간색, **단어** 는 금색 기울임
+  - "Decoding the"
+  - "*microbial* world"
+  - "with **data.**"
+hero_buttons:
+  - { label: "Explore my research →", url: "/research/", primary: true }
+  - { label: "Latest paper", url: "/publications/" }
+
+research_heading: "What I work on —"
+research_heading_em: "microbes, genomes, and the models that read them."
+
+contact_heading: "Have data that needs"
+contact_heading_em: "a closer look?"
+contact_text: "Open to collaborations on microbiome analysis, pathogen genomics, and NGS pipelines."
+contact_button: { label: "Get in touch", url: "mailto:banseok212@gmail.com" }

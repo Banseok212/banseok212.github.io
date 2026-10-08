@@ -1,0 +1,9 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+Gemfile.lock
+vendor/
+.DS_Store
+
+# 개인 문서 (공개 금지) — 이력서 등은 _private/ 에 보관
+_private/

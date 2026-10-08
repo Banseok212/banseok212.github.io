@@ -1,0 +1,73 @@
+# 연구 분야 — 첫 항목이 Home에서 가장 큰 카드로 보입니다.
+# topic 은 Publications의 topics 이름과 같게 쓰면 "View papers" 링크가 해당 필터로 연결돼요.
+# projects: 이 분야에 속한 프로젝트 (Research 페이지에 표시)
+- id: microbiome-ml
+  label: "Microbiome × ML"
+  title: "Machine Learning for the Human Microbiome"
+  summary: "Predicting age, disease severity, and health outcomes from gut and oral microbiome profiles."
+  quote: "The microbiome changes with age and disease. With enough samples, a model can read those changes."
+  body: >
+    I build machine-learning models on 16S rRNA microbiome data from large Korean cohorts.
+    Examples include a gut-age classifier trained on 3,659 people and a model that grades
+    periodontitis severity. Iterative feature selection and multivariable statistics narrow
+    each model to a small, interpretable set of biomarker genera. Every model is then tested
+    on independent external cohorts.
+  methods: ["16S rRNA amplicon", "Random Forest / XGBoost", "MaAsLin2 · LEfSe", "Diversity analysis", "External validation"]
+  topic: "Microbiome"
+  projects:
+    - { title: "Gut microbiome age prediction & longevity-associated markers", period: "2025 – 2026", partner: "Accugene (internal)", note: "First author · n = 3,659 · macro-AUC 0.863" }
+    - { title: "Oral microbiome classifier for periodontitis severity", period: "2024.07 – 2025.05", partner: "Seoul National University Bundang Hospital", note: "AUC 0.98 · 15 biomarker genera" }
+    - { title: "Gut microbiome & blood markers after red ginseng intake in obesity", period: "2023.11 – 2025.05", partner: "Korea Ginseng Corp. R&D", note: "" }
+    - { title: "Gut microbiome changes under Korean-medicine treatment for atopic dermatitis", period: "2021.02 – 2022.01", partner: "Korea Institute of Oriental Medicine", note: "" }
+
+- id: pathogen-genomics
+  label: "Pathogen genomics"
+  title: "Viral Whole-Genome Sequencing & Surveillance"
+  summary: "Amplicon primer panels, Nanopore assembly, and phylogenetics for measles and Rift Valley fever viruses."
+  quote: "Fast, complete viral genomes show how an outbreak arrived and how it is changing."
+  body: >
+    I design amplicon primer panels that cover whole viral genomes and build automated
+    Nanopore assembly pipelines (Medaka-polished) whose output matches MiSeq-based assemblies.
+    I also use Bayesian phylogenetics (BEAST) to trace where introduced strains came from
+    and when they diverged.
+  methods: ["Amplicon primer design", "Oxford Nanopore", "Medaka", "BEAST / TMRCA", "InDel detection"]
+  topic: "Viral genomics"
+  projects:
+    - { title: "Whole-genome diagnostic for measles virus", period: "2025.06 – 2025.11", partner: "Korea Disease Control and Prevention Agency (KDCA)", note: "" }
+    - { title: "Universal primers for Rift Valley fever virus whole-genome sequencing", period: "2020.12 – 2022.01", partner: "Korea Health Industry Development Institute", note: "Scientific Reports 2023" }
+
+- id: microbial-genomics
+  label: "Microbial genomics"
+  title: "Microbial Genomics & Taxonomy"
+  summary: "Genome-based discovery and classification of novel bacteria, yeasts, and probiotic strains."
+  quote: "Naming a new species starts with its genome."
+  body: >
+    I combine whole-genome assembly, ANI, and phylogenomics with phenotypic, physiological,
+    and chemotaxonomic characterization to describe novel bacterial species. The same
+    genome-first approach supports probiotic development, including biosynthetic gene
+    cluster (BGC) mining for antimicrobial potential.
+  methods: ["Genome assembly & annotation", "ANI / phylogenomics", "BGC mining", "Polyphasic taxonomy", "PacBio RSII"]
+  topic: "Microbial taxonomy"
+  projects:
+    - { title: "Novel Lactobacillus strain against oral biofilm & pathogens", period: "2025.08 – 2025.10", partner: "Accugene (internal)", note: "2 registered patents" }
+    - { title: "Identification and characterization of novel bacterial species", period: "2020.09 – 2022.08", partner: "Korea University", note: "IJSEM 2024" }
+    - { title: "Respiratory bacterial culture bank for microbiome therapeutics", period: "2020.04 – 2020.12", partner: "MSIT · National Research Foundation of Korea", note: "" }
+    - { title: "Characterization of yeasts not previously recorded in Korea", period: "2019.07 – 2019.12", partner: "Pai Chai University", note: "" }
+
+- id: clinical-ngs
+  label: "Clinical NGS"
+  title: "Clinical NGS & Bioinformatics Pipelines"
+  summary: "Validated, automated pipelines for clinical panels, RNA-seq, WES, metagenomics, and pan-genomes."
+  quote: "A result is only as trustworthy as the pipeline that produced it."
+  body: >
+    I validated NGS pipelines for a CLIA laboratory (BRCA1/2, hereditary cancer, and primary
+    immunodeficiency panels), covering accuracy, precision, limit of detection, sample stability,
+    and blind cross-lab concordance. I also build and run automated pipelines for RNA-seq
+    (DEG, GO and KEGG enrichment), whole-exome sequencing, metagenomics and metatranscriptomics,
+    and pan-genome analysis.
+  methods: ["CLIA validation", "RNA-seq · DESeq2", "WES variant calling", "Metagenomics", "Pan-genome"]
+  topic: "Clinical NGS"
+  projects:
+    - { title: "NGS pipeline validation in a CLIA lab environment", period: "2023.07 – 2023.12", partner: "Accugene (internal)", note: "Sensitivity 100% · concordance 98–99%" }
+    - { title: "Transcriptomic changes in kidney cells under a diabetic-complication regulator (KLF9)", period: "2025.10 – 2025.12", partner: "KDCA National Institute of Health", note: "" }
+    - { title: "Academic & DTC microbiome analysis service pipelines", period: "2023.05 – 2026.04", partner: "Accugene (internal)", note: "" }

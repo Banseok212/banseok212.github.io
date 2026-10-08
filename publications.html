@@ -1,0 +1,36 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+kicker: Publications · Patents · Thesis
+heading: "Papers, patents"
+heading_em: "& everything in between."
+intro: "Peer-reviewed articles, manuscripts under review, patents, and my thesis. Use the filter to browse by research area."
+---
+{% assign pubs = site.data.publications | sort: "year" | reverse %}
+{% assign all_topics = "" | split: "" %}
+{% for p in pubs %}{% for t in p.topics %}{% assign all_topics = all_topics | push: t %}{% endfor %}{% endfor %}
+{% assign all_topics = all_topics | uniq | sort %}
+<section class="filter-bar">
+  <div class="wrap filter-inner">
+    <div class="filters" role="group" aria-label="Filter by topic">
+      <span class="mono muted small">Filter</span>
+      <button class="filter active" data-topic="">All</button>
+      {% for t in all_topics %}<button class="filter" data-topic="{{ t }}">{{ t }}</button>{% endfor %}
+    </div>
+    <span class="mono muted small"><span id="pub-count">{{ pubs.size }}</span> items</span>
+  </div>
+</section>
+<section class="section pubs-section">
+  <div class="wrap">
+    {% assign years = pubs | group_by: "year" %}
+    {% for y in years %}
+    <div class="year-block">
+      <div class="year-side"><h2 class="year">{{ y.name }}</h2><span class="mono muted small">{{ y.items.size }} items</span></div>
+      <div class="pub-list">
+        {% for p in y.items %}{% include pub-item.html p=p %}{% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

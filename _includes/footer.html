@@ -1,0 +1,15 @@
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <div class="foot-title">{{ site.title }}</div>
+      <div class="muted">{{ site.data.profile.affiliation }}<br>{{ site.footer_line }}</div>
+    </div>
+    <div class="foot-links">
+      {% for l in site.data.profile.links %}{% if l.url != "" %}<a href="{{ l.url }}">{{ l.label }}</a>{% endif %}{% endfor %}
+    </div>
+  </div>
+  <div class="wrap foot-bottom mono">
+    <span>© {{ site.time | date: "%Y" }} {{ site.title }}</span>
+    <span>{{ site.footer_motto }}</span>
+  </div>
+</footer>

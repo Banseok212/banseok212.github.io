@@ -1,0 +1,20 @@
+{% assign p = include.p %}
+{% assign authors = p.authors %}
+{% for me in site.author_highlight %}{% assign bold = '<strong>' | append: me | append: '</strong>' %}{% assign authors = authors | replace: me, bold %}{% endfor %}
+<article class="pub" data-topics="{{ p.topics | join: '|' }}">
+  <div class="pub-tags">
+    {% if p.type %}<span class="chip chip-type">{{ p.type }}</span>{% endif %}
+    {% for t in p.topics %}<span class="chip">{{ t }}</span>{% endfor %}
+  </div>
+  {% assign title = p.title | markdownify | remove: '<p>' | remove: '</p>' | strip %}
+  <h3>{% if p.url %}<a href="{{ p.url }}">{{ title }}</a>{% else %}{{ title }}{% endif %}</h3>
+  <div class="authors">{{ authors }}</div>
+  <div class="pub-meta">
+    <span class="venue">{{ p.venue }}{% if include.show_year %} · {{ p.year }}{% endif %}{% if p.note %}<span class="note"> · {{ p.note }}</span>{% endif %}</span>
+    <span class="pub-links">
+      {% if p.url %}<a href="{{ p.url }}">Read →</a>{% endif %}
+      {% if p.code %}<a href="{{ p.code }}">Code</a>{% endif %}
+      {% if p.slides %}<a href="{{ p.slides }}">Slides</a>{% endif %}
+    </span>
+  </div>
+</article>

@@ -1,0 +1,44 @@
+# About 페이지 (참고 사이트의 Team 자리)
+name: "Banseok Lee"
+name_local: "이반석"
+position: "Bioinformatics Team Lead"
+affiliation: "Bioinformatics Team, Accugene Inc. · Songdo, Incheon"
+photo: ""            # 예: /assets/img/profile.jpg  (비워두면 이니셜 표시)
+bio_en: >
+  I lead the bioinformatics team at Accugene. I build machine-learning models and NGS pipelines
+  that turn microbiome and genome data into clinically useful results. My work spans gut and oral
+  microbiome biomarker discovery, whole-genome sequencing of viruses such as measles and Rift Valley
+  fever virus, genome-based taxonomy of novel microbes, and validated clinical NGS workflows.
+  I received my M.S. from the Lab of Prokaryotic Biology at Korea University.
+bio_ko: >
+  어큐진 생물정보분석팀을 이끌고 있습니다. 마이크로바이옴과 유전체 데이터를 임상적으로 의미 있는 결과로
+  바꾸는 머신러닝 모델과 NGS 분석 파이프라인을 만듭니다. 장내·구강 마이크로바이옴 바이오마커 발굴,
+  홍역·리프트밸리열 바이러스 전장 유전체 분석, 신종 미생물의 유전체 기반 분류, 임상 NGS 파이프라인 검증을
+  수행해 왔습니다. 고려대학교 세균학 연구실에서 석사 학위를 받았습니다.
+links:
+  - { label: "Email",          url: "mailto:banseok212@gmail.com" }
+  - { label: "GitHub",         url: "" }   # 아이디 정해지면 https://github.com/아이디
+  - { label: "Google Scholar", url: "" }
+  - { label: "ORCID",          url: "" }
+  - { label: "CV (PDF)",       url: "" }
+
+philosophy_label: "Approach"
+philosophy_heading: "Analytical insight,"
+philosophy_heading_em: "clinical value."
+philosophy: >
+  Analysis is only useful if someone can act on it. Every model I build is validated on
+  independent data, every pipeline is benchmarked before it runs on real samples, and every
+  result is written so that clinicians and product teams can use it.
+
+interests: ["Microbiome", "Machine learning", "Pathogen genomics", "Microbial taxonomy", "Clinical NGS", "Multi-omics"]
+toolset: ["Python", "R", "Git", "Conda", "Docker", "QIIME", "DESeq2", "MaAsLin2", "LEfSe", "BEAST", "Medaka", "Nanopore", "Claude Code", "Notion"]
+
+education:
+  - { period: "2020.09 – 2022.08", title: "M.S., Integrated Biomedical and Life Science", org: "Korea University · Lab of Prokaryotic Biology (Advisor: Prof. Hana Yi)" }
+  - { period: "2019.07 – 2020.02", title: "Undergraduate Researcher", org: "Pai Chai University · Prokaryotic Taxonomy & Bioengineering Lab (Advisor: Prof. Jongsoo Lee)" }
+
+experience:
+  - { period: "2023.05 – present", title: "Team Lead, Bioinformatics", org: "Accugene Inc., Songdo, Incheon", detail: "Microbiome machine learning, clinical NGS validation, and analysis service pipelines." }
+  - { period: "2022.07 – 2023.04", title: "Researcher, Genome Analysis Center", org: "Hancom Carelink, Pangyo", detail: "Set up the lab and core analysis pipelines for personal microbiome and genetic-testing services." }
+
+awards: []

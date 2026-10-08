@@ -1,0 +1,62 @@
+---
+layout: default
+title: About
+permalink: /about/
+---
+{% assign p = site.data.profile %}
+<section class="page-head">
+  <div class="wrap about-top">
+    <div class="avatar">
+      {% if p.photo != "" %}<img src="{{ p.photo | relative_url }}" alt="{{ p.name }}">{% else %}<span>{{ p.name | slice: 0 }}</span>{% endif %}
+    </div>
+    <div>
+      <span class="kicker"><span class="rule"></span>{{ p.position }}</span>
+      <h1 class="display">{{ p.name }}{% if p.name_local != "" %} <span class="local">{{ p.name_local }}</span>{% endif %}</h1>
+      <div class="muted">{{ p.affiliation }}</div>
+      <p class="bio">{{ p.bio_en }}</p>
+      {% if p.bio_ko != "" %}<p class="bio ko">{{ p.bio_ko }}</p>{% endif %}
+      <div class="hero-buttons">
+        {% for l in p.links %}{% if l.url != "" %}<a class="btn" href="{{ l.url }}">{{ l.label }}</a>{% endif %}{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if p.philosophy != "" %}
+<section class="section section-alt">
+  <div class="wrap narrow">
+    <div class="eyebrow">{{ p.philosophy_label }}</div>
+    <h2 class="h2">{{ p.philosophy_heading }} <em>{{ p.philosophy_heading_em }}</em></h2>
+    <p class="lede">{{ p.philosophy }}</p>
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  <div class="wrap cv-grid">
+    <div>
+      <div class="eyebrow">Education</div>
+      <ol class="timeline">
+        {% for e in p.education %}<li><span class="mono muted">{{ e.period }}</span><div><strong>{{ e.title }}</strong><div class="muted">{{ e.org }}</div></div></li>{% endfor %}
+      </ol>
+      <div class="eyebrow">Experience</div>
+      <ol class="timeline">
+        {% for e in p.experience %}<li><span class="mono muted">{{ e.period }}</span><div><strong>{{ e.title }}</strong><div class="muted">{{ e.org }}</div>{% if e.detail %}<p>{{ e.detail }}</p>{% endif %}</div></li>{% endfor %}
+      </ol>
+    </div>
+    <div>
+      <div class="eyebrow">Interests</div>
+      <div class="chips">{% for i in p.interests %}<span class="chip">{{ i }}</span>{% endfor %}</div>
+      {% if p.toolset.size > 0 %}
+      <div class="side-gap"></div><div class="eyebrow">Toolset</div>
+      <div class="chips">{% for i in p.toolset %}<span class="chip">{{ i }}</span>{% endfor %}</div>
+      {% endif %}
+      {% if p.awards.size > 0 %}
+      <div class="side-gap"></div><div class="eyebrow">Awards &amp; Honors</div>
+      <ol class="timeline">
+        {% for a in p.awards %}<li><span class="mono muted">{{ a.year }}</span><div><strong>{{ a.title }}</strong><div class="muted">{{ a.org }}</div></div></li>{% endfor %}
+      </ol>
+      {% endif %}
+    </div>
+  </div>
+</section>

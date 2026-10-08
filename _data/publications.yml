@@ -1,0 +1,72 @@
+# 논문·학술 결과물. 연도별로 자동 정렬됩니다.
+# type: Journal / In review / Patent / Thesis / Preprint / Poster / Talk ... (자유)
+# topics: 필터 버튼 이름 (Research의 topic과 맞추면 연결됨)
+# title 안의 *기울임* 은 학명 표기용
+# selected: true 면 Home의 Selected Publications에 나와요.
+- title: "Gut microbiome-based age prediction and longevity-associated taxonomic markers in a large-scale Korean cohort"
+  authors: "Ban Seok Lee, Jae-Won Jo, In Kyoung Cho, Hyeri Kim, Sun Jae Kwon"
+  venue: "Frontiers in Aging (Healthy Longevity)"
+  year: 2026
+  type: "In review"
+  topics: ["Microbiome"]
+  note: "First author · submitted 2026"
+  selected: true
+
+- title: "Machine learning reveals microbiome differences by periodontitis severity"
+  authors: "Soo Hyun Seo, Jae Won Lee, Sujin Oh, Jin-Sil Hong, Ban Seok Lee, Sun Jae Kwon, Keun-Suh Kim, Jung Soo Park, Ju Sun Heo, Ki Hoon Ahn, Hyo-Jung Lee, Kyoung Un Park"
+  venue: "PLOS ONE"
+  year: 2026
+  type: "Journal"
+  topics: ["Microbiome"]
+  url: "https://doi.org/10.1371/journal.pone.0349686"
+  selected: true
+
+- title: "구강 바이오필름 분해 활성 및 구강 병원성 미생물을 억제하는 신규 유산균 및 이를 포함하는 조성물"
+  authors: "권순재, 김혜리, 최우진, 이승헌, 최보빈, 이반석"
+  venue: "Korean Patent (registered)"
+  year: 2026
+  type: "Patent"
+  topics: ["Microbial taxonomy"]
+  note: "Reg. No. 10-2953906 · App. No. 10-2025-0171868"
+
+- title: "구강 바이오필름 분해 활성 및 구강 병원성 미생물을 억제하는 신규 유산균 및 이를 포함하는 조성물"
+  authors: "권순재, 김혜리, 최우진, 이승헌, 최보빈, 이반석"
+  venue: "Korean Patent (registered)"
+  year: 2026
+  type: "Patent"
+  topics: ["Microbial taxonomy"]
+  note: "Reg. No. 10-2953898 · App. No. 10-2025-0171867"
+
+- title: "구강 마이크로바이옴 데이터를 활용한 질환예측 머신러닝 모델 생성 방법 및 이에 의해 생성된 질환예측 머신러닝 모델"
+  authors: "권순재, 이재원, 이반석, 이재훈, 조광문, 김혜리"
+  venue: "Korean Patent (application)"
+  year: 2024
+  type: "Patent"
+  topics: ["Microbiome"]
+  note: "App. No. 10-2024-0083694 · Pub. No. 10-2026-0000857"
+
+- title: "*Massilia litorea* sp. nov., *Marinobacter salinisoli* sp. nov., and *Rhodobacter xanthinilyticus*"
+  authors: "Banseok Lee, Donghoon Shin, Juseong Kim, Su-Kyoung Shin, Hana Yi, Min-gyung Bae"
+  venue: "International Journal of Systematic and Evolutionary Microbiology"
+  year: 2024
+  type: "Journal"
+  topics: ["Microbial taxonomy"]
+  url: "https://doi.org/10.1099/ijsem.0.006255"
+  note: "First author"
+  selected: true
+
+- title: "Universal primers for *Rift Valley fever virus* whole-genome sequencing"
+  authors: "Kwan Woo Kim, Banseok Lee, Sujeong Eom, Donghoon Shin, Changwoo Park, Seil Kim, Hana Yi"
+  venue: "Scientific Reports"
+  year: 2023
+  type: "Journal"
+  topics: ["Viral genomics"]
+  url: "https://doi.org/10.1038/s41598-023-45848-z"
+  selected: true
+
+- title: "Comparison of genome assembly tools for Nanopore sequencing in the diagnosis of *Rift Valley fever virus*"
+  authors: "Banseok Lee"
+  venue: "M.S. Thesis, Korea University"
+  year: 2022
+  type: "Thesis"
+  topics: ["Viral genomics"]

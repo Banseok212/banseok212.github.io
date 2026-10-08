@@ -1,0 +1,37 @@
+# ─────────────────────────────────────────────
+# 사이트 기본 정보 — 이 부분을 본인 정보로 바꿔 주세요
+# ─────────────────────────────────────────────
+title: "Banseok Lee"
+tagline: "Bioinformatics · Microbiome · Machine Learning"   # 히어로 위 작은 줄
+description: "Research homepage of Banseok Lee (이반석), bioinformatician working on microbiome, pathogen genomics, and machine learning."
+url: "https://YOUR-ID.github.io"
+baseurl: ""
+lang: en
+
+# GitHub 아이디 — Tools 페이지가 이 계정의 저장소 정보를 불러옵니다
+github_username: ""   # 예: "banseok" — 정해지면 입력
+# true면 Tools 페이지 아래에 공개 저장소 전체를 자동으로 보여줍니다
+tools_show_all_repos: true
+
+# Publications 저자 목록에서 굵게 표시할 내 이름 (표기가 여러 개면 모두)
+author_highlight: ["Ban Seok Lee", "Banseok Lee", "이반석"]
+
+# 상단 메뉴 — 순서나 이름을 여기서 바꿀 수 있어요
+nav:
+  - { title: Home,         url: / }
+  - { title: Research,     url: /research/ }
+  - { title: About,        url: /about/ }
+  - { title: Publications, url: /publications/ }
+  - { title: Tools,        url: /tools/ }
+
+footer_line: "Incheon, Republic of Korea"
+footer_motto: "From sequence to clinical insight"
+
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

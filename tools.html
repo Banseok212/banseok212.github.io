@@ -1,0 +1,44 @@
+---
+layout: page
+title: Tools
+permalink: /tools/
+kicker: Code & Datasets
+heading: "Pipelines & code"
+heading_em: "built to be reused."
+intro: "Analysis pipelines and tools from my research. Once a tool has a public GitHub repository, its stars and last update are loaded live from GitHub."
+---
+<section class="section">
+  <div class="wrap">
+    <div class="tool-grid">
+      {% for t in site.data.tools %}
+      <article class="tool"{% if t.repo != "" %} data-repo="{{ t.repo }}"{% endif %}>
+        <div class="tool-top">
+          <h2 class="h3">{{ t.name }}</h2>
+          {% if t.repo != "" %}<span class="gh-stats mono small muted"></span>{% elsif t.status %}<span class="chip chip-type">{{ t.status }}</span>{% endif %}
+        </div>
+        <p>{{ t.description }}</p>
+        <div class="chips">{% for tag in t.tags %}<span class="chip">{{ tag }}</span>{% endfor %}<span class="chip gh-lang" hidden></span></div>
+        <div class="tool-links">
+          {% if t.repo != "" %}<a class="btn btn-sm" href="https://github.com/{{ t.repo }}">GitHub</a>{% endif %}
+          {% for l in t.links %}{% if l.url != "" %}<a class="btn btn-sm" href="{{ l.url }}">{{ l.label }}</a>{% endif %}{% endfor %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if site.tools_show_all_repos and site.github_username != "" %}
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">More on GitHub</div>
+      <h2 class="h2">All public repositories</h2>
+    </div>
+    <div class="repo-grid" id="repo-grid" data-user="{{ site.github_username }}">
+      <p class="muted">Loading repositories…</p>
+    </div>
+    <a class="more" href="https://github.com/{{ site.github_username }}">View profile on GitHub →</a>
+  </div>
+</section>
+{% endif %}

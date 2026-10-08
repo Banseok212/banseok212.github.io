@@ -1,0 +1,82 @@
+---
+layout: default
+---
+{% assign h = site.data.home %}
+<section class="hero">
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <span class="kicker"><span class="rule"></span>{{ site.title }} · {{ site.tagline }}</span>
+    <div>
+      <h1 class="hero-title">{% for line in h.hero_lines %}{{ line | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</h1>
+      <div class="hero-buttons">
+        {% for b in h.hero_buttons %}<a class="btn{% if b.primary %} btn-primary{% endif %}" href="{{ b.url | relative_url }}">{{ b.label }}</a>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Research</div>
+      <h2 class="h2">{{ h.research_heading }}<br><em>{{ h.research_heading_em }}</em></h2>
+    </div>
+    <div class="bento">
+      {% for r in site.data.research %}
+      <a class="bento-card" href="{{ '/research/' | relative_url }}#{{ r.id }}">
+        <div>
+          <div class="num">{{ r.label }}</div>
+          <h3>{{ r.title }}</h3>
+        </div>
+        <div>
+          <p>{{ r.summary }}</p>
+          {% if forloop.first and r.methods %}<div class="chips">{% for m in r.methods %}<span class="chip">{{ m }}</span>{% endfor %}</div>{% endif %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if site.data.news.size > 0 %}
+<section class="section section-alt">
+  <div class="wrap two-col">
+    <div>
+      <div class="eyebrow">News</div>
+      <h2 class="h3">Recent updates</h2>
+      <ul class="news">
+        {% for n in site.data.news limit: 6 %}
+        <li>
+          <div class="news-date mono">{{ n.date | date: "%b %Y" }}</div>
+          <div>
+            {% if n.tag %}<span class="chip chip-type">{{ n.tag }}</span>{% endif %}
+            <p>{{ n.text }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <div class="eyebrow">Selected work</div>
+      <h2 class="h3">Recent work</h2>
+      {% assign sel = site.data.publications | where: "selected", true | sort: "year" | reverse %}
+      <div class="pub-list compact">
+        {% for p in sel limit: 5 %}{% include pub-item.html p=p show_year=true %}{% endfor %}
+      </div>
+      <a class="more" href="{{ '/publications/' | relative_url }}">View all publications →</a>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section">
+  <div class="wrap">
+    <div class="contact-card">
+      <div class="eyebrow">Contact</div>
+      <h2 class="h2 big">{{ h.contact_heading }}<br><em>{{ h.contact_heading_em }}</em></h2>
+      <p class="lede">{{ h.contact_text }}</p>
+      <a class="btn btn-primary" href="{{ h.contact_button.url }}">{{ h.contact_button.label }}</a>
+    </div>
+  </div>
+</section>

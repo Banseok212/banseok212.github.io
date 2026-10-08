@@ -1,0 +1,40 @@
+---
+layout: page
+title: Research
+permalink: /research/
+kicker: Research
+heading: "From sequence"
+heading_em: "to insight."
+intro: "I work where microbiology, genomics, and machine learning meet. The four threads below share one goal: turning sequencing data into results that clinicians, public-health agencies, and product teams can act on."
+---
+{% for r in site.data.research %}
+<section class="section research-row" id="{{ r.id }}">
+  <div class="wrap research-grid">
+    <div class="research-side">
+      <div class="research-num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</div>
+      <div class="mono small">{{ r.label }}</div>
+    </div>
+    <div>
+      <h2 class="h2">{{ r.title }}</h2>
+      {% if r.quote %}<p class="quote">“{{ r.quote }}”</p>{% endif %}
+      <p class="body">{{ r.body }}</p>
+      {% if r.methods %}
+      <div class="mono muted small label">Methods</div>
+      <div class="chips">{% for m in r.methods %}<span class="chip">{{ m }}</span>{% endfor %}</div>
+      {% endif %}
+      {% if r.projects %}
+      <div class="mono muted small label projects-label">Projects</div>
+      <ul class="projects">
+        {% for pj in r.projects %}
+        <li>
+          <div class="pj-title">{{ pj.title }}</div>
+          <div class="pj-meta mono"><span>{{ pj.period }}</span><span>{{ pj.partner }}</span>{% if pj.note != "" %}<span class="pj-note">{{ pj.note }}</span>{% endif %}</div>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% if r.topic %}<a class="more" href="{{ '/publications/' | relative_url }}?topic={{ r.topic | url_encode }}">View papers in this area →</a>{% endif %}
+    </div>
+  </div>
+</section>
+{% endfor %}

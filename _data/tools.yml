@@ -1,0 +1,24 @@
+# 대표로 보여줄 도구. repo: "아이디/저장소" 를 적으면
+# 별(★), 언어, 최근 업데이트를 GitHub에서 자동으로 불러옵니다.
+# status: "Coming soon" 처럼 적으면 카드에 표시돼요 (저장소 공개 전 자리 잡기용).
+# ※ 아래는 이력서 기반 후보 — 워킹 디렉토리 정리 후 실제 저장소로 교체 예정
+- name: "Microbiome ML toolkit"
+  repo: ""
+  status: "Coming soon"
+  description: "Feature selection (iterative Random Forest + MaAsLin2) and classifier benchmarking for 16S microbiome data, from the gut-age and periodontitis studies."
+  tags: ["Python", "R", "16S rRNA"]
+  links: []
+
+- name: "Nanopore viral assembly pipeline"
+  repo: ""
+  status: "Coming soon"
+  description: "Automated, Medaka-polished assembly of amplicon-based viral whole genomes from Oxford Nanopore reads."
+  tags: ["Nanopore", "Medaka", "Workflow"]
+  links: []
+
+- name: "RNA-seq DEG pipeline"
+  repo: ""
+  status: "Coming soon"
+  description: "End-to-end RNA-seq analysis: QC, mapping, quantification, DESeq2, and GO/KEGG enrichment."
+  tags: ["RNA-seq", "DESeq2"]
+  links: []

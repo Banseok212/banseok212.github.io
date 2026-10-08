@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<section class="page-head">
+  <div class="wrap">
+    <span class="kicker"><span class="rule"></span>{{ page.kicker }}</span>
+    <h1 class="display">{{ page.heading }}{% if page.heading_em %}<br><em>{{ page.heading_em }}</em>{% endif %}</h1>
+    {% if page.intro %}<p class="lede">{{ page.intro }}</p>{% endif %}
+  </div>
+</section>
+{{ content }}
